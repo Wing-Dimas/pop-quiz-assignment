@@ -1,0 +1,107 @@
+html, body, .global-wrapper{
+  height: 100%;
+}
+body{
+  background-color:#34495e;
+}
+.modal-wrapper{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+.dialog{
+  background-color: white;
+  width: 60%;
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 4px;
+}
+.dialog .sentence{
+  margin: 0;
+  padding: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+#question{
+  display: none;
+  margin: 0;
+  padding: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+.dialog button{
+  color:white;
+  border:none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#begin-button{
+  background-color: #3498db;
+}
+#correct-button{
+  display: none;
+  background-color: #27ae60;
+}
+#wrong-button{
+  display: none;
+  background-color: #e74c3c;
+}
+.global-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.global-container{
+  width: 70%;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  font-size: 20px;
+}
+.global-container .time-indicator{
+  background-color:#c0392b;
+  padding: 8px;
+}
+.list-container{
+  display: flex;
+}
+.list-container .left-container{
+  width: 50%;
+  background-color: #3498db;
+  padding: 8px;
+}
+.list-container .right-container{
+  width: 50%;
+  background-color: #2ecc71;
+  padding: 8px;
+}
+.left-container p, .right-container p{
+  margin:0;
+  background-color: #2c3e50;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.left-container span, .right-container span{
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.right-container .correct::after{
+  content:" - correct";
+}
+
+.right-container .wrong::after{
+  content:" - wrong";
+}

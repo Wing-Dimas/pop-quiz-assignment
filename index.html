@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pop-Quiz Assignment</title>
+<link rel="stylesheet" href="Styles/normalize.css" />
+<link rel="stylesheet" href="Styles/style.css" />
+<script src="Scripts/script.js"></script>
+</head>
+<body>
+  <div class="modal-wrapper">
+    <div class="dialog">
+      <p class="sentence">
+        Hey <span id="candidate"></span> It's quiz time! Prepare yourself, it might be a tricky question.
+      </p>
+      <p id="question"></p>
+      <button id="begin-button">Let The Game Begin!</button>
+      <button id="correct-button">Your Answer is Correct!</button>
+      <button id="wrong-button">I'm so sorry, You're wrong</button>
+    </div>
+  </div>
+  <div class="global-wrapper">
+    <div class="global-container">
+      <div class="time-indicator">
+        <span id="seconds-left">0</span>
+        <span>seconds left</span>
+      </div>
+      <div class="list-container">
+        <div class="left-container">
+          <p>Pending List</p>
+        </div>
+        <div class="right-container">
+          <p>Passed The Question</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
